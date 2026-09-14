@@ -47,7 +47,7 @@ nav a:hover{color:var(--text)}
 
 .hero{padding:120px 0 96px;border-bottom:1px solid var(--line)}
 .hero-inner{max-width:900px;margin:0}
-.eyebrow,.mini-label,.section-number{
+.eyebrow,.mini-label{
   margin:0;
   text-transform:uppercase;
   letter-spacing:.11em;
@@ -89,9 +89,18 @@ nav a:hover{color:var(--text)}
 .status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#2aa84a;margin-right:8px;vertical-align:1px}
 
 .section{padding:94px 0;border-bottom:1px solid var(--line)}
-.split-section{display:grid;grid-template-columns:220px minmax(0,1fr);gap:80px}
-.section-heading{position:sticky;top:100px;align-self:start}
-.section-heading h2{margin:8px 0 0;font-size:1.05rem;letter-spacing:-.02em}
+.split-section{display:grid;grid-template-columns:180px minmax(0,1fr);gap:90px}
+.section-heading{position:sticky;top:100px;align-self:start;text-align:left}
+.section-number{display:none}
+.section-heading h2{
+  margin:0;
+  text-transform:uppercase;
+  letter-spacing:.11em;
+  font-size:.72rem;
+  line-height:1.4;
+  font-weight:700;
+  color:var(--muted);
+}
 .section-content{max-width:820px}
 .about-copy p{color:var(--muted);font-size:1rem}
 .about-copy .lead{margin-top:0;color:var(--text);font-size:1.35rem;line-height:1.5;letter-spacing:-.02em}
@@ -140,7 +149,7 @@ footer{padding:28px 0}
 .footer-row p{margin:0}
 
 @media(max-width:850px){
-  .split-section{grid-template-columns:1fr;gap:34px}
+  .split-section{grid-template-columns:1fr;gap:22px}
   .section-heading{position:static}
   .hero{padding-top:90px}
   .hero-details{margin-top:54px}
